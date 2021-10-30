@@ -3,8 +3,9 @@ import requests
 from PIL import Image
 from io import BytesIO
 from flask import Flask, render_template, request, send_from_directory
-import cv2
 from classifier import *
+import cv2
+
 
 app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
