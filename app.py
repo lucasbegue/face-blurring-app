@@ -1,14 +1,8 @@
 import os
-import uuid
-import flask
-import urllib
 import requests
 from PIL import Image
-from PIL import Image
 from io import BytesIO
-from tensorflow.keras.models import load_model
-from flask import Flask , render_template  , request , send_from_directory
-from tensorflow.keras.preprocessing.image import load_img , img_to_array
+from flask import Flask, render_template, request, send_from_directory
 import cv2
 from classifier import *
 
@@ -60,7 +54,7 @@ def success():
                     cv2.imwrite(os.path.join('static/blurred', img_filename), blurred_img)
 
             else:
-                error = "Please upload images of .jpg , .jpeg and .png extension only."
+                error = "Please upload images of .jpg , .jpeg, .jfif and .png extension only."
 
             if len(error) == 0:
                 return render_template('success.html', img=img_filename)
@@ -106,6 +100,7 @@ def success():
 @app.route('/uploads/<path:filename>', methods=['GET', 'POST'])
 def download(filename):
     return send_from_directory(directory=os.getcwd()+"/static/blurred", filename="filename.txt")
+
 
 if __name__ == "__main__":
     app.run(debug = True)

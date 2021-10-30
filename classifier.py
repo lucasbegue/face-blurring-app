@@ -28,7 +28,6 @@ def detect_child_faces(img_path):
     detections = detector.detect_faces(img)
     faces = []
     boxes = []
-    original_shapes = []
 
     for det in detections:
         boxes.append(det['box'])
