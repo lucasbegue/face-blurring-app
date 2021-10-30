@@ -1,0 +1,43 @@
+.cover {
+    display: grid;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.5)),url('../front_success.jpg');
+}
+
+p {
+    text-align: right;
+    padding: 1em;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: center;
+    padding: 0.7em;
+}
+
+.title {
+    font-family: "Audiowide", sans-serif;
+}
+
+.main-nav{
+    font-family: "Audiowide", sans-serif;
+}
+
+
+.image img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.download-button{
+    padding: 3em;
+    text-align:center;
+}
+
+button{
+    text-align-center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href={{url_for('static' , filename = 'css/style2.css')}}>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Results Page</title>
+
+
+    </head>
+    <body>
+    <div class="cover">
+        <div class="main-nav">
+            <p><a href="/">HomePage</a></p>
+        </div>
+        <div class = "header">
+            <div class="title">
+                <h2 class="header-text">Blurred Image</h2>
+            </div>
+            <div class="image">
+                <img class="result-img" src={{url_for('static', filename = 'blurred/'+ img)}}>
+            </div>
+        </div>
+        <div class="download-button">
+            <a href="static/blurred/blurred.jpg" download="blurred.jpg"><button type="button" class="btn btn-success btn-lg">Download</button></a>
+        </div>
+    </div>
+    </body>
+</html>

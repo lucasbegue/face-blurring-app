@@ -1,0 +1,82 @@
+.cover {
+    display: grid;
+    color: white;
+    grid-template-rows: 200px 450px 100px;
+    background-size: cover;
+    background-position: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.5)),url('../front.jpg');
+    text-align: center;
+}
+
+
+.grid-buttons{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+.grid-title{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    padding: 3.5em;
+    font-family: "Audiowide", sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.grid-forms{
+    display: grid;
+    grid-template-rows: 80px 50px 80px 50px 50px;
+    gap: 1.5em;
+    padding: 3em;
+}
+
+.or {
+    text-align: center;
+}
+
+
+.grid-form-file{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-form-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input[type=text] {
+  width: 70%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+input[type=file] {
+  width: 70%;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+
+.grid-buttons{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 1em;
+}
+
+.error-content{
+    color:red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer{
+    font-style: oblique;
+}
+

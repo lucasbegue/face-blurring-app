@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Face Blur App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <link rel='stylesheet' href={{url_for('static' , filename = 'css/style.css')}}>
+    </head>
+    <body>
+        <header>
+            <div class="cover">
+                <div class="grid-title">
+                    <div>
+                        <h1>Face Blur App</h1>
+                    </div>
+
+                    <div>
+                        <p>Automate selective face blurring on images and videos.</p>
+                    </div>
+                </div>
+                <div class="grid-forms">
+                    <div class="upload-file">
+                        <form class = "file-form" action="/success" method="post", enctype="multipart/form-data">
+                            <div class="grid-form-file">
+                                <div class="form-file">
+                                    <input class="file-form-input" type="file" name="file"  id="upload-photo"/>
+                                </div>
+
+                                <div class="grid-buttons">
+                                    <div>
+                                        <input type="submit" class="btn btn-success btn-lg" name="submit_button" value="Blur all faces">
+                                    </div>
+                                    <div>
+                                        <input type="submit" class="btn btn-success btn-lg" name="submit_button" value="Blur child faces">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="or">
+                        <h5>OR</h5>
+                    </div>
+
+                     <div class="upload-link">
+                        <form class = "link-form" action="/success" method="post" enctype="multipart/form-data">
+                            <div class="grid-form-link">
+                                <div class="form-url">
+                                    <input class="link-form-input" type="text" maxlength="1000" name = "link" placeholder="Paste the image URL"/>
+                                </div>
+
+                                <div class="grid-buttons">
+                                    <div>
+                                        <input type="submit" class="btn btn-success btn-lg" name="submit_button" value="Blur all faces">
+                                    </div>
+
+                                    <div>
+                                        <input type="submit" class="btn btn-success btn-lg" name="submit_button" value="Blur child faces">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="error-content">
+                        <p>{{error}}</p>
+                    </div>
+                    <div class="footer">
+                        <p>The model first detects faces and then predicts if they belong to kids or adults.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
