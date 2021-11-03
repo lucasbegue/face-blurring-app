@@ -11,6 +11,7 @@ to a child or an adult. It uses the xception architecture
 (https://keras.io/api/applications/xception/) with pre-trained weights on imagenet as
 base model with some dense-batchNormalization-dropout layers on top. The full 
 architecture of this classification model looks like this: 
+
 ![architecture image](/static/architecture.png)
 
 The full training notebook can be seen [here](https://github.com/lucasbegue/face-blurring-app/blob/master/training/training.ipynb)
