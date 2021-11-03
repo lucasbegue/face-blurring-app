@@ -11,8 +11,7 @@ to a child or an adult. It uses the xception architecture
 (https://keras.io/api/applications/xception/) with pre-trained weights on imagenet as
 base model with some dense-batchNormalization-dropout layers on top. The full 
 architecture of this classification model looks like this: 
-The full training notebook can be seen http://github.com - automatic!
-[GitHub](http://github.com)
+The full training notebook can be seen [here](http://github.com/lucasbegue/face-blurring-app/training/training/ipynb)
 
 
 The app was built on Flask and it takes an image as an input, first detects all faces
