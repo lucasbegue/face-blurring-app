@@ -1,4 +1,4 @@
-# face-blurring-app
+# Face Blurring App
 
 
 ## Description
@@ -14,8 +14,19 @@ with pre-trained weights on imagenet as base model with added dense layers on to
 The app was built on Flask and it takes an image as an input, first detects all faces
 and then predicts if each one of the faces belongs to an adult or child. It then blurrs 
 faces of children and outputs the blurred image with blurred faces. 
-The UI 
+The UI looks like this: 
+![UI image](/static/exampleUI.png)
+and an example output looks like this:
 ![Example Image](/static/blurred/blurred.jpg)
 
-## Installation
-If you want to 
+## Using the app
+If you want to run the app locally first clone the repo:
+`git clone https://github.com/lucasbegue/face-blurring-app.git`
+and then run on shell:
+```
+cd face-blurring-app
+pyhon app.py
+```
+and you will have the app running locally.
+
+
