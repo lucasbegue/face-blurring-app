@@ -30,8 +30,8 @@ If you want to run the app locally first clone the repo:
 `git clone https://github.com/lucasbegue/face-blurring-app.git`
 and then run on shell:
 ```
-cd face-blurring-app
-python app.py
+$ cd face-blurring-app
+$ python app.py
 ```
 and you will have the app running locally.
 
