@@ -18,8 +18,8 @@ The full training notebook can be seen [here](https://github.com/lucasbegue/face
 
 
 The app was built on Flask and it takes an image as an input, first detects all faces
-and then predicts if each one of the faces belongs to an adult or child. It then blurrs 
-faces of children and outputs the blurred image with blurred faces. 
+and then predicts if each one of the faces belongs to an adult or child. It then blurs 
+faces of children and outputs the image with blurred faces. 
 The UI looks like this: 
 ![UI image](/static/exampleUI.png)
 and an example output looks like this:
@@ -31,7 +31,7 @@ If you want to run the app locally first clone the repo:
 and then run on shell:
 ```
 cd face-blurring-app
-pyhon app.py
+python app.py
 ```
 and you will have the app running locally.
 
