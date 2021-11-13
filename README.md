@@ -31,6 +31,7 @@ If you want to run the app locally first clone the repo:
 and then run on shell:
 ```
 $ cd face-blurring-app
+$ pip install -r requirements.txt
 $ python app.py
 ```
 and you will have the app running locally.
